@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/superslides.css" />
+     <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> 
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/forms.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="titleMessage">
+          <p class="main">Rajeev Singh Rawat</p>
+          <p class="sub typed"></p>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav id="navigation" class="navbar navbar-expand-lg"> 
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html"
+              >About Me <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" active href="#">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <form id="feedback" name="feedback">
+                  <div class="row"> 
+                      <div class="col-md-6"> 
+                          <label for="fname">First Name</label><br>
+                          <label for="lname">Last Name</label><br>
+                          <label>Gender</label>
+                          <label for="comment">Comment:</label><br><br><br><br><br>
+                          <input type="submit" value="submit" onclick="check()">
+     
+                     </div>
+                      <div class="col-md-6">
+                         <input type="text" id="fname" name="firstname" required placeholder="..."><br>
+                         <input type="text" id="lname" name="lastname" placeholder="..."><br>
+                     <div class="row">
+                         <div class="col-md-6"><label style="margin-left: 0;" for="Male">Male</label>
+                         <input type="radio" id="Male" name="gender" value="Male"></div>
+                         <div class="col-md-6"><label style="margin-left: 0;" for="Male">Female</label>
+                         <input type="radio" id="Male" name="gender" value="Female">
+                     </div>
+                     <textarea name="comment" type="comment" rows="5" cols="25" id="comment" required placeholder="Write Your Comment here..."></textarea>
+                     <br><input style="margin-top: 3rem;" type="reset">  
+                   </div>
+                         <br>
+                      </div>
+                  </div>
+                 </form>
+              </div>
+              <script src="../js/form.js"></script>
+              <div id="showdata" class="col-md-4">
+              </div>
+            </div>
+              
+          </div>
+    </div>
+    <script>
+        
+        
+        const show=()=>{
+        //     var form =document.getElementById("feedback");
+        // function handleForm(e){
+        //     e.preventDefault();
+        // }
+            var fname = document.forms["feedback"]["firstname"].value;
+            var lname = document.forms["feedback"]["lastname"].value;
+            var gender= document.forms["feedback"]["Gender"].value;
+            var comment=document.forms["feedback"]["comment"].value;
+            console.log(fname);
+            var sal;
+            if(firstname=""){
+                return;
+            }
+            if(gender=="Male"){
+                sal="Mr.";
+            }else{
+                sal="Miss."
+            }
+            var final=sal+","+fname +" "+lname +", says,"+ comment;
+            document.getElementById('showdata').innerHTML=final;
+        }
+    </script>
+    <!-- Skills -->
+    <div id="skills" class="skillsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>MY SKILLS</h2>
+            <p>My skills in web & programming languages.</p>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              
+              <h4>HTML</h4>
+            </div>
+
+            <div class="skill">
+              
+              <h4>CSS</h4>
+            </div>
+
+            <div class="skill">
+              
+              <h4>Javascript</h4>
+            </div>
+
+            <div class="skill">
+              
+              <h4>C#</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Do you want to contact me?</p>
+        <h2>Send an email now.</h2>
+        <a href="mailTo:contact@Rajeev.com" class="contactButton"
+          >Contact me!</a
+        >
+      </div>
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>
+          copyright &copy; 2022 some rights reserved | made by Rajeev Singh Rawat
+        </p>
+      </div>
+    </div>
+
+  
+    <script src="../js/jquery.superslides.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/typed.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

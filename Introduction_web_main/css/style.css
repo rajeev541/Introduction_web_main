@@ -1,0 +1,153 @@
+body {
+  font-size: 14px;
+  color:rgb(13, 32, 72);
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 50%;
+  height: 250px;
+  left:40%;
+  top: 17%;
+  z-index: 1000;
+  text-align: left;
+  margin-top: -125px;
+}
+
+header .titleMessage p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+header .titleMessage  .main {
+  font-size: 50px;
+}
+
+header .titleMessage .sub {
+  font-size: 23px;
+}
+
+.section {
+  background-color: rgb(13, 32, 72);
+  color: rgb(151, 150, 150);
+  padding: 100px 0;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
+
+.skillsSection {
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(15, 124, 5, 1) 0%,
+    rgba(0, 90, 143, 1) 100%
+  );
+  color: #fff;
+}
+
+.contactSection {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(15, 124, 5, 1) 0%,
+    rgba(0, 90, 143, 1) 100%
+  );
+  color: #fff;
+}
+
+.skill {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 2rem;
+}
+
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #ffff;
+  background: linear-gradient(
+    270deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(19, 146, 7, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+
+.copyrightSection {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+}
+
+#navigation {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(15, 124, 5, 1) 0%,
+    rgba(0, 90, 143, 1) 100%
+  );
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+#navigation li a:hover {
+  color: rgb(0, 57, 90);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-toggler-icon {
+  background: url(../img/menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
